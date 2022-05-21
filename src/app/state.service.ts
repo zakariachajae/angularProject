@@ -11,4 +11,8 @@ export class StateService {
   constructor() { }
 
   public ReusableComponentState= new Subject<boolean>();
+  
+  getReusable(){
+    return this.ReusableComponentState;
+  }
 }
