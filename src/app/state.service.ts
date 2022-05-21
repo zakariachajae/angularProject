@@ -10,9 +10,16 @@ export class StateService {
 
   constructor() { }
 
-  public ReusableComponentState= new Subject<boolean>();
+  ReusableComponentState= new Subject<boolean>();
+ 
   
   getReusable(){
     return this.ReusableComponentState;
+  }
+
+  checkBoxState =new Subject<boolean>();
+
+  checkBoxChanged(){
+    
   }
 }
